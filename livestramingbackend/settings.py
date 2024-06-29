@@ -147,7 +147,7 @@ CACHE_MIDDLEWARE_KEY_PREFIX = ""  # should be used if the cache is shared across
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": 'redis://127.0.0.1:6379/0',
+        "LOCATION": env('REDIS_HOST'),
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         },
