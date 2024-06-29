@@ -9,6 +9,5 @@ gunicorn
 django-distill
 django-environ
 djangorestframework
-mysqlclient
 Pillow
 requests
